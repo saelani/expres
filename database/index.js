@@ -9,7 +9,7 @@ const { dbHost, dbName, dbPort, dbUser, dbPass } = require('../app/config');
 //@cluster0.llapuef.mongodb.net/?retryWrites=true&w=majority
 
 mongoose
-  .connect(`mongodb://${dbUser}:${dbPass}@${dbHost}/${dbName}?authSource=admin`, 
+  .connect(`mongodb://${dbUser}:${dbPass}@${dbHost}/${dbName}?authSource=homestore`, 
     {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true});
 
 // mongoose
